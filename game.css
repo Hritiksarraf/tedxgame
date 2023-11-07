@@ -114,6 +114,7 @@ img {
 .modal {
   display: none;
   /* position: fixed; */
+  margin: auto;
   top: 0;
   left: 0;
   width: 50%;
@@ -124,14 +125,20 @@ img {
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
+  /* background-color: black; */
+  /* background-color: white; */
+  /* background-color: black;
+   */
+   margin: auto;
+  color: white;
+   padding: 20px;
   text-align: center;
   border-radius: 5px;
 }
 
 .options {
   text-align: left;
+  background-color: black;
 }
 
 label {
@@ -140,9 +147,23 @@ label {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #bb00ff;
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.option{
+  background-color: rgb(135, 0, 0);
+  padding-left: 20px;
+  margin-bottom: 6px;
+  color: white;
+  border-radius: 8px;
+  border-color: 5px solid rebeccapurple;
+  cursor: pointer;
+
+
+
 }

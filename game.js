@@ -114,10 +114,10 @@ function displayQuizQuestion(squareNumber) {
     document.getElementById("button2").value = question.option2;
     document.getElementById("button3").value = question.option3;
     document.getElementById("button4").value = question.option4;
-    document.getElementById('option1').innerText = question.option1;
-    document.getElementById('option2').innerText = question.option2;
-    document.getElementById('option3').innerText = question.option3;
-    document.getElementById('option4').innerText = question.option4;
+    document.getElementById('option1Text').textContent = question.option1;
+    document.getElementById('option2Text').textContent = question.option2;
+    document.getElementById('option3Text').textContent = question.option3;
+    document.getElementById('option4Text').textContent = question.option4;
     quizModal.style.display = 'block';
   }
 }
@@ -258,6 +258,7 @@ document.getElementById("diceBtn").addEventListener("click", function () {
     rollingSound.play()
     num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
     
+    
     document.getElementById("dice").innerText = num
     document.getElementById('tog').innerText = "Walk on your career journey"
         play('p1', 'p1sum', -7, num)
@@ -290,3 +291,8 @@ document.getElementById("diceBtn").addEventListener("click", function () {
       quizModal.style.display = 'none';
     }
   });
+
+  function selectOption(inputId) {
+    var input = document.getElementById(inputId);
+    input.checked = true;
+  }
