@@ -2,7 +2,7 @@ let tog = 1;
 let rollingSound = new Audio("rpg-dice-rolling-95182.mp3");
 let winSound = new Audio("winharpsichord-39642.mp3");
 
-let score = 1000
+let score = 600
 let p1sum = 0;
 let p2sum = 0;
 
@@ -297,7 +297,8 @@ if (p1sum == 99) {
 document.getElementById("diceBtn").addEventListener("click", function () {
   rollingSound.play();
   num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-  score = score - 10
+  score = score - 15
+  document.getElementById("score").innerText="Your score is: "+score
   // num=27
 
   document.getElementById("dice").innerText = num;
