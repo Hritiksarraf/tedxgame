@@ -295,8 +295,8 @@ if (p1sum == 99) {
 //this is the function to roll the dice
 document.getElementById("diceBtn").addEventListener("click", function () {
   rollingSound.play();
-  // num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-  num=27
+  num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+  // num=27
 
   document.getElementById("dice").innerText = num;
   document.getElementById("tog").innerText = "Walk on your career journey";
