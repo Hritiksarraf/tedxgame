@@ -20,16 +20,16 @@
     />
   </head>
 
-  <body>
-    <h1>Snakes and ladder</h1>
+  <body style="background-color: burlywood; color: white;">
+    <h1 style="margin:40px">Snakes and ladder</h1>
 
     <div id="diceCont">
-      <p id="tog">Start your career journey:</p>
+      <p id="tog" style="margin-top: 30px;">Start your career journey:</p>
       <p id="dice">0</p>
       <button id="diceBtn">ROLL</button>
     </div>
 
-    <div class="cont">
+    <div class="cont" >
       <div class="box" id="b100"></div>
       <div class="box" id="b99"></div>
       <div class="box" id="b98"></div>
@@ -177,7 +177,50 @@
         <button id="submitAnswer">Submit</button>
       </div>
     </div>
-<!-- </div> -->
+
+
+<!-- for snakes -->
+<div id="quizModalsnake" class="modal" style="align-items: center;justify-content: center; margin-top: auto;">
+    <div class="modal-content" style="background-color: black; color: white; width: 50%; ">
+      <h2>Quiz Question</h2>
+      <p id="questions">What is the capital of France?</p>
+      <div class="options">
+        <div class="option" onclick="selectOption('button1s')">
+          <label id="option1s" for="option1">
+            <input type="radio" id="button1s" name="answer" value="paris" />
+            <span id="option1Texts">Berlin</span>
+            </label>
+        </div>
+
+        <div class="option" onclick="selectOption('button2s')">
+          <label id="option2s" for="option2">
+            <input type="radio" id="button2s" name="answer" value="london" />
+            <span id="option2Texts">Berlin</span>
+          </label
+          >
+        </div>
+
+        <div class="option" onclick="selectOption('button3s')">
+          <label id="option3s" for="option3">
+            <input type="radio" id="button3s" name="answer" value="berlin" />
+            <span id="option3Texts">Berlin</span>
+            </label>
+        </div>
+
+        <div class="option" onclick="selectOption('button4s')">
+          <label id="option4s" for="option4s">
+            <input type="radio" id="button4s" name="answer" value="madrid" />
+            <span id="option4Texts">hritik</span>
+            </label>
+        </div>
+      </div>
+      <button id="submitAnswers" onclick="snakeOnClick()">Submit</button>
+    </div>
+  </div>
+
+
+
+
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
