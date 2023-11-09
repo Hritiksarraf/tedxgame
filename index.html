@@ -19,10 +19,16 @@
       crossorigin="anonymous"
     />
   </head>
+  
+
 
   <body style="background-color: burlywood; color: white; width: 83vh;">
-    <h1 style="margin:40px">Career Evolution Quiz Quest</h1>
+    <h1 style="margin-top:30px;">Career Evolution Quiz Quest</h1>
     <h2 id="score" style="margin-bottom: 15px;">Your score is: </h2>
+
+    <div class="alert alert-success" role="alert" id="sucess_alert" style=" background-color: black; color: white; opacity: 0%;">
+        A simple success alert—check it out!
+      </div>
 
     <!-- <div id="diceCont">
       <p id="tog" style="margin-top: 30px;">Start your career journey:</p>
@@ -148,7 +154,7 @@
 
     <!-- <div style="display: flex;align-items: center;justify-content: center;"> -->
     <div id="quizModal" class="modal" style="align-items: center;justify-content: center; margin-top: auto;">
-      <div class="modal-content" style="background-color: black; color: white; width: 50%; ">
+      <div class="modal-content" style="background-color: black; color: white; width: 80%; ">
         <h2>Quiz Question</h2>
         <p id="question">What is the capital of France?</p>
         <div class="options">
@@ -188,7 +194,7 @@
 
 <!-- for snakes -->
 <div id="quizModalsnake" class="modal" style="align-items: center;justify-content: center; margin-top: auto;">
-    <div class="modal-content" style="background-color: black; color: white; width: 50%; ">
+    <div class="modal-content" style="background-color: black; color: white; width: 80%; ">
       <h2>Quiz Question</h2>
       <p id="questions">What is the capital of France?</p>
       <div class="options">
@@ -224,6 +230,7 @@
       <button id="submitAnswers" onclick="snakeOnClick()">Submit</button>
     </div>
   </div>
+
 
 
 
