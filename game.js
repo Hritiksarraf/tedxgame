@@ -6,6 +6,8 @@ let score = 750;
 let p1sum = 0;
 let p2sum = 0;
 
+
+
 // make the variable to use in the  function
 const quizModal = document.getElementById("quizModal");
 const questionElement = document.getElementById("question");
@@ -560,6 +562,7 @@ function play(player, psum, correction, num) {
   } else if (sum == 100) {
     winSound.play();
     alert("Congratulations! Your score is: " + score);
+    // showScorecard(score)
     location.reload();
   } else {
     numarr = Array.from(String(sum));
@@ -664,3 +667,4 @@ function selectOption(inputId) {
   var input = document.getElementById(inputId);
   input.checked = true;
 }
+
